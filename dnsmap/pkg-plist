@@ -1,0 +1,3 @@
+bin/dnsmap
+bin/dnsmap-bulk
+%%DATADIR%%/wordlist_TLAs.txt

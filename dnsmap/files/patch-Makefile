@@ -1,0 +1,17 @@
+--- Makefile.orig	2010-02-21 11:39:40 UTC
++++ Makefile
+@@ -1,12 +1,5 @@
+-CC=gcc
+-CFLAGS=-I.
+-BINDIR=/usr/local/bin
+ 
+-dnsmap: dnsmap.c dnsmap.h
+-	$(CC) $(CFLAGS) -o dnsmap dnsmap.c
++all:
++	cc  -O3  -Wall  dnsmap.c -o dnsmap
+ 
+-install: dnsmap
+-	mkdir -p $(DESTDIR)$(BINDIR)
+-	install -m 0755 dnsmap $(DESTDIR)$(BINDIR)
+-	install -m 0755 dnsmap-bulk.sh $(DESTDIR)$(BINDIR)/dnsmap-bulk
+ 

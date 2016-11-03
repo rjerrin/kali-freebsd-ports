@@ -1,0 +1,7 @@
+InTrace is traceroute-like application that 
+enables users to enumerate IP hops using existing 
+TCP connections, both initiated from local 
+network (local system) or from remote hosts. 
+It could be useful for network reconnaissance 
+and firewall bypassing.
+WWW:https://github.com/robertswiecki/intrace

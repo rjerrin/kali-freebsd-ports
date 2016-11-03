@@ -1,0 +1,4 @@
+bin/dnsenum
+%%DOCSDIR%%/README
+%%DOCSDIR%%/INSTALL.txt
+%%DATADIR%%/dns.txt

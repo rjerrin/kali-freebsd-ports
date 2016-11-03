@@ -1,0 +1,23 @@
+Cookie Cadger helps identify information leakage 
+from applications that utilize insecure HTTP GET 
+requests.
+
+Web providers have started stepping up to the plate 
+since Firesheep was released in 2010. Today, most 
+major websites can provide SSL/TLS during all 
+transactions, preventing cookie data from leaking 
+over wired Ethernet or insecure Wi-Fi. But the fact 
+remains that Firesheep was more of a toy than a tool. 
+Cookie Cadger is the first open-source pen-testing tool 
+ever made for intercepting and replaying specific insecure 
+HTTP GET requests into a browser.
+
+Cookie Cadgers Request Enumeration Abilities
+
+Cookie Cadger is a graphical utility which harnesses the 
+power of the Wireshark suite and Java to provide a fully 
+cross-platform, entirely open- source utility which can monitor 
+wired Ethernet, insecure Wi-Fi, or load a packet capture 
+file for offline analysis.
+
+WWW: https://www.cookiecadger.com/

@@ -1,0 +1,4 @@
+%%SERVER%%bin/dnmap-server
+%%CLIENT%%bin/dnmap-client
+%%DATADIR%%/server.pem
+%%DOCSDIR%%/README
