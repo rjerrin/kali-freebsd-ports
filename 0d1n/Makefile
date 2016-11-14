@@ -6,11 +6,11 @@ CATEGORIES=	security
 MASTER_SITES=	GH
 
 MAINTAINER=	zackj901@yandex.com
-COMMENT=	Enumerate IP hops using existing TCP connections
+COMMENT=	Web security tool to make fuzzing at HTTP inputs
 
-LICENSE=	GPLv2
+LICENSE=	GPLv3
 
-LIB_DEPENDS=	libcurl.so:${PORTSDIR}/ftp/curl
+LIB_DEPENDS+=	libcurl.so:ftp/curl
 
 USE_GITHUB=	1
 GH_ACCOUNT=	CoolerVoid
