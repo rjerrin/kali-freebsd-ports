@@ -1,0 +1,7 @@
+--- Makefile.orig	2006-09-20 19:17:32 UTC
++++ Makefile
+@@ -1,3 +1,4 @@
++CC?=gcc
+ all: enumiax 
+ 
+ include base.mk
