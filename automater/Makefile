@@ -29,8 +29,8 @@ do-install:
 	${MKDIR} 	     	 ${STAGEDIR}${PYTHONPREFIX_SITELIBDIR}/automater
 	${INSTALL_DATA} 	 ${FILELIST:S|^|${WRKSRC}/|} 		  ${STAGEDIR}${PYTHONPREFIX_SITELIBDIR}/automater
 	${INSTALL_DATA}		 ${FILELIST:S|^|${WRKSRC}/|} 		  ${STAGEDIR}${PYTHONPREFIX_SITELIBDIR}/automater
-	${INSTALL_DATA}		 ${WRKSRC}/tekdefense.xml		  ${STAGEDIR}${DATADIR}
-	${INSTALL_DATA}		 ${WRKSRC}/sites.xml		  	  ${STAGEDIR}${DATADIR}
+#	${INSTALL_DATA}		 ${WRKSRC}/tekdefense.xml		  ${STAGEDIR}${DATADIR}
+#	${INSTALL_DATA}		 ${WRKSRC}/sites.xml		  	  ${STAGEDIR}${DATADIR}
 	${INSTALL_SCRIPT}	 ${WRKSRC}/Automater.py           	  ${STAGEDIR}${PREFIX}/bin/automater
 
 .include <bsd.port.mk>
