@@ -24,8 +24,8 @@ SHEBANG_FILES=	${WRKSRC}/Automater.py
 FILELIST=	inputs.py outputs.py siteinfo.py  utilities.py
 
 do-install:
-	${MKDIR} 	    	 ${STAGEDIR}${DOCSDIR}
-	${MKDIR} 	    	 ${STAGEDIR}${DATADIR}
+#	${MKDIR} 	    	 ${STAGEDIR}${DOCSDIR}
+#	${MKDIR} 	    	 ${STAGEDIR}${DATADIR}
 	${MKDIR} 	     	 ${STAGEDIR}${PYTHONPREFIX_SITELIBDIR}/automater
 	${INSTALL_DATA} 	 ${FILELIST:S|^|${WRKSRC}/|} 		  ${STAGEDIR}${PYTHONPREFIX_SITELIBDIR}/automater
 	${INSTALL_DATA}		 ${FILELIST:S|^|${WRKSRC}/|} 		  ${STAGEDIR}${PYTHONPREFIX_SITELIBDIR}/automater
