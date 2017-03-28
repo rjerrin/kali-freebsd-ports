@@ -3,8 +3,8 @@
 PORTNAME=	cookiecadger
 PORTVERSION=	1.08
 CATEGORIES=	security java
-MASTER_SITES=	https://s3.amazonaws.com/cookiecadger/   http://binfiles.tk/
-DISTFILES=	${DISTNAME:S/c/C/g}.jar${EXTRACT_SUFX}
+MASTER_SITES=	https://www.cookiecadger.com/files/
+DISTFILES=	${DISTNAME:S/c/C/g}.jar
 
 MAINTAINER=	zackj901@yandex.com
 COMMENT=	Capture data from applications that utilize insecure HTTP GET requests
