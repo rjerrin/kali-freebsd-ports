@@ -8,7 +8,7 @@ MASTER_SITES=	GH
 MAINTAINER=	zackj901@yandex.com
 COMMENT=        IP and URL analysis tool
 
-LICENSE=	OTHER
+LICENSE=	GPLv2
 
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}requests>=0:www/py-requests
 
