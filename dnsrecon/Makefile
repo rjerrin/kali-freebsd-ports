@@ -12,7 +12,8 @@ COMMENT=	DNS enumeration tool
 LICENSE=	GPLv3
 
 RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}dnspython>=0:${PORTSDIR}/dns/py-dnspython \
-	  	${PYTHON_PKGNAMEPREFIX}netaddr>=0:${PORTSDIR}/net/py-netaddr
+	  	${PYTHON_PKGNAMEPREFIX}netaddr>=0:${PORTSDIR}/net/py-netaddr \
+		${PYTHON_PKGNAMEPREFIX}sqlite3>=0:${PORTSDIR}/databases/py-sqlite3
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	darkoperator
