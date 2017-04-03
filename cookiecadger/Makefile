@@ -6,14 +6,15 @@ CATEGORIES=	security java
 MASTER_SITES=	https://www.cookiecadger.com/files/
 DISTFILES=	${DISTNAME:S/c/C/g}.jar
 
-MAINTAINER=	zackj901@yandex.com
+
+MAINTAINER=	rihaz.jerrin@gmail.com
 COMMENT=	Capture data from applications that utilize insecure HTTP GET requests
 
 LICENSE=	BSD2CLAUSE
 
 RUN_DEPENDS=	tshark:${PORTSDIR}/net/tshark
 
-EXTRACT_FILES=
+EXTRACT_ONLY=    
 
 USE_JAVA=       yes
 NO_EXTRACT=	yes
