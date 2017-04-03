@@ -27,7 +27,7 @@ PLIST_FILES+=	${JAVALIBDIR}/CookieCadger-1.08.jar \
 SUB_FILES=	cookiecadger.sh
 
 do-install:
-	  ${INSTALL_DATA} 	 ${WRKDIR}/CookieCadger-1.08.jar  ${STAGEDIR}/${JAVALIBDIR}
+	  ${INSTALL_DATA} 	 ${DISTDIR}/CookieCadger-1.08.jar  ${STAGEDIR}/${JAVALIBDIR}
 	  ${INSTALL_SCRIPT} 	 ${WRKDIR}/cookiecadger.sh	  ${STAGEDIR}${PREFIX}/bin/cookiecadger
 
 .include <bsd.port.mk>
