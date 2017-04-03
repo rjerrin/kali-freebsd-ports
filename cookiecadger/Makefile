@@ -16,9 +16,9 @@ RUN_DEPENDS=	tshark:${PORTSDIR}/net/tshark
 
 EXTRACT_ONLY=    
 
-USE_JAVA=       yes
-NO_EXTRACT=	yes
-JAVA_EXTRACT=	no
+#USE_JAVA=       yes
+#NO_EXTRACT=	yes
+#JAVA_EXTRACT=	no
 JAVA_VERSION=   1.7
 NO_BUILD=       yes
 PLIST_FILES+=	${JAVALIBDIR}/CookieCadger-1.08.jar \
