@@ -16,18 +16,16 @@ RUN_DEPENDS=	tshark:${PORTSDIR}/net/tshark
 
 EXTRACT_ONLY=    
 
-#USE_JAVA=       yes
-#NO_EXTRACT=	yes
-#JAVA_EXTRACT=	no
-JAVA_VERSION=   1.7
-NO_BUILD=       yes
-PLIST_FILES+=	${JAVALIBDIR}/CookieCadger-1.08.jar \
+USE_JAVA=       yes
+JAVA_VERSION=   1.7+
+NO_ARCH=	yes
+PLIST_FILES+=	%%JAVAJARDIR%%/CookieCadger-1.08.jar \
 		${LOCALBASE}/bin/cookiecadger
 
 SUB_FILES=	cookiecadger.sh
 
 do-install:
-	  ${INSTALL_DATA} 	 ${DISTDIR}/CookieCadger-1.08.jar  ${STAGEDIR}/${JAVALIBDIR}
+	  ${INSTALL_DATA} 	 ${DISTDIR}/CookieCadger-1.08.jar  ${STAGEDIR}/${JAVAJARDIR}
 	  ${INSTALL_SCRIPT} 	 ${WRKDIR}/cookiecadger.sh	  ${STAGEDIR}${PREFIX}/bin/cookiecadger
 
 .include <bsd.port.mk>

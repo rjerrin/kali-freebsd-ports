@@ -1,4 +1,4 @@
 #!/bin/sh 
 
 JAVA=/usr/local/openjdk7-jre/bin/java
-exec $JAVA  -jar  %%JAVALIBDIR%%/CookieCadger-1.08.jar "$@" 
+exec $JAVA  -jar  %%JAVAJARDIR%%/CookieCadger-1.08.jar "$@" 
