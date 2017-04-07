@@ -22,7 +22,6 @@ PLIST_FILES+=	%%JAVAJARDIR%%/CookieCadger-1.08.jar \
 		bin/cookiecadger
 
 SUB_FILES=	cookiecadger
-SUB_LIST=       JAVAJARDIR="${JAVAJARDIR}"
 
 do-install:
 	  ${INSTALL_DATA} 	 ${DISTDIR}/CookieCadger-1.08.jar  ${STAGEDIR}/${JAVAJARDIR}/CookieCadger-1.08.jar
