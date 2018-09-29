@@ -5,7 +5,7 @@ PORTVERSION=	0.0.39.3
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
-MAINTAINER=	ruby@FreeBSD.org
+MAINTAINER=	rihaz.jerrin@gmail.com
 COMMENT=	Express way to send mail from Ruby
 
 LICENSE=	MIT
