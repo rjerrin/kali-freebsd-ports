@@ -6,7 +6,7 @@ CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
 MAINTAINER=	rihaz.jerrin@gmail.com
-COMMENT=	Express way to send mail from Ruby
+COMMENT=	Framework to provide an easy way to implement CMS Scanners
 
 LICENSE=	MIT
 
