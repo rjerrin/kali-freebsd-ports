@@ -6,7 +6,7 @@ CATEGORIES=	security
 MASTER_SITES=	https://labs.portcullis.co.uk/download/
 DISTFILES=	${DISTNAME:S/./-/g}${EXTRACT_SUFX}
 
-MAINTAINER=	zackj901@yandex.com
+MAINTAINER=	rihaz.jerrin@gmail.com
 COMMENT=	Password dictionary attack tool for SMB
 
 LICENSE=	GPLv2
