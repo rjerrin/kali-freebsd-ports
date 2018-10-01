@@ -5,7 +5,7 @@ PORTVERSION=	0.0.39.3
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
-MAINTAINER=	rihaz.jerrin@gmail.com
+MAINTAINER=     rihaz.jerrin@gmail.com
 COMMENT=	Framework to provide an easy way to implement CMS Scanners
 
 LICENSE=	MIT
@@ -20,6 +20,7 @@ RUN_DEPENDS=	rubygem-activesupport5>=5.1.6:devel/rubygem-activesupport5 \
 		rubygem-yajl-ruby>=1.3.0:devel/rubygem-yajl-ruby
 
 USES=		gem
+
 NO_ARCH=	yes
 USE_RUBY=	yes
 RUBY_VER=	2.4
