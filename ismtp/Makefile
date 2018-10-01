@@ -22,9 +22,10 @@ NO_BUILD=	yes
 
 SHEBANG_FILES=  ${WRKSRC}/iSMTP.py
 
+PLIST_FILES= bin/ismtp
+
 do-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/iSMTP.py  ${STAGEDIR}${PREFIX}/bin/ismtp
 
-PLIST_FILES= bin/ismtp
 
 .include <bsd.port.mk>
