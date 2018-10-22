@@ -12,7 +12,7 @@ COMMENT=	Test for SMTP user enumeration,internal spoofing, and relay
 LICENSE=	MIT
 
 USES=           python:2.7  shebangfix
-SHEBANG_GLOB=   *.py
+SHEBANG_FILES=   ISMTP.py
 
 USE_GITHUB=     yes
 GH_ACCOUNT=     altjx
