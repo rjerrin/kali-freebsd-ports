@@ -1,30 +1,30 @@
-# $FreeBSD$
+# $FreeBSD$x
 
 PORTNAME=	ismtp
-PORTVERSION=	1.5
-DISTVERSIONPREFIX= v
+DISTVERSION=	g20180824
 CATEGORIES=	security
-MASTER_SITES=  	GH
+MASTER_SITES=	GH
 
 MAINTAINER=	rihaz.jerrin@gmail.com
 COMMENT=	Test for SMTP user enumeration,internal spoofing, and relay
 
 LICENSE=	MIT
 
-USES=           python:2.7  shebangfix
-SHEBANG_FILES=   ISMTP.py
+USES=	python:2.7  shebangfix
 
-USE_GITHUB=     yes
-GH_ACCOUNT=     altjx
+USE_GITHUB=	yes
+GH_ACCOUNT=	altjx
 GH_PROJECT=	ipwn
-GH_TAGNAME=     32bbc05
+GH_TAGNAME=	32bbc05
+GH_SUBDIR=	iSMTP
 
 NO_BUILD=	yes
 
-PLIST_FILES= bin/ismtp
+SHEBANG_FILES=	${WRKSRC}/${GH_SUBDIR}/iSMTP.py
+
+PLIST_FILES=	bin/ismtp
 
 do-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/iSMTP.py  ${STAGEDIR}${PREFIX}/bin/ismtp
-
 
 .include <bsd.port.mk>
