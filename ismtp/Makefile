@@ -1,4 +1,4 @@
-# $FreeBSD$x
+# $FreeBSD$
 
 PORTNAME=	ismtp
 DISTVERSION=	g20180824
