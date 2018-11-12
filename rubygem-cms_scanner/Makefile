@@ -2,7 +2,7 @@
 
 PORTNAME=	cms_scanner
 PORTVERSION=	0.0.39.3
-CATEGORIES=	devel rubygems
+CATEGORIES=	security rubygems
 MASTER_SITES=	RG
 
 MAINTAINER=     rihaz.jerrin@gmail.com

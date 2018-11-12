@@ -2,7 +2,7 @@
 
 PORTNAME=	wpscan
 PORTVERSION=	3.2.1
-CATEGORIES=	www rubygems
+CATEGORIES=	security rubygems
 MASTER_SITES=	RG
 
 MAINTAINER=	rihaz.jerrin@gmail.com

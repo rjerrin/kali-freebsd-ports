@@ -2,7 +2,7 @@
 
 PORTNAME=	opt_parse_validator
 PORTVERSION=	0.0.16.1
-CATEGORIES=	devel rubygems
+CATEGORIES=	security rubygems
 MASTER_SITES=	RG
 
 MAINTAINER=	rihaz.jerrin@gmail.com
