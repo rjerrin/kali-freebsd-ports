@@ -1,10 +1,17 @@
---- Automater.py.orig	2016-11-15 17:40:09 UTC
+--- Automater.py.orig	2018-11-05 13:59:04 UTC
 +++ Automater.py
-@@ -37,6 +37,7 @@ No exceptions exported.
+@@ -37,10 +37,10 @@ No exceptions exported.
  """
  
  import sys
-+sys.path.append('/usr/local/lib/python2.7/site-packages/automater')
- from siteinfo import SiteFacade, Site
- from utilities import Parser, IPWrapper
- from outputs import SiteDetailOutput
+-from siteinfo import SiteFacade, Site
+-from utilities import Parser, IPWrapper
+-from outputs import SiteDetailOutput
+-from inputs import TargetFile
++from automater.siteinfo import SiteFacade, Site
++from automater.utilities import Parser, IPWrapper
++from automater.outputs import SiteDetailOutput
++from automater.inputs import TargetFile
+ 
+ __VERSION__ = '0.21'
+ __GITLOCATION__ = 'https://github.com/1aN0rmus/TekDefense-Automater'
