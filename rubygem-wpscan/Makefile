@@ -14,7 +14,7 @@ RUN_DEPENDS=	rubygem-activesupport5>=5.1.6:devel/rubygem-activesupport5 \
 	        rubygem-addressable>=2.5.2:www/rubygem-addressable \
 		rubygem-nokogiri>=1.8.4:textproc/rubygem-nokogiri \
 		rubygem-public_suffix>=3.0.3:dns/rubygem-public_suffix \
-		rubygem-progressbar>=1.9.0:devel/rubygem-progressbar \
+		rubygem-progressbar>=1.10.0:devel/rubygem-progressbar \
 		rubygem-typhoeus>=1.3.0:www/rubygem-typhoeus \
 		rubygem-yajl-ruby>=1.3.0:devel/rubygem-yajl-ruby \
 		rubygem-opt_parse_validator>=0.0.16.1:devel/rubygem-opt_parse_validator \
