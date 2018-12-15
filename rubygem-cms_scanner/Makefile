@@ -23,6 +23,5 @@ USES=		gem
 
 NO_ARCH=	yes
 USE_RUBY=	yes
-RUBY_VER=	2.4
 
 .include <bsd.port.mk>
