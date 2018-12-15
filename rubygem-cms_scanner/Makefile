@@ -17,7 +17,7 @@ RUN_DEPENDS=	rubygem-activesupport5>=5.1.6:devel/rubygem-activesupport5 \
 		rubygem-public_suffix>=3.0.3:dns/rubygem-public_suffix \
 		rubygem-ruby-progressbar>=1.10.0:devel/rubygem-ruby-progressbar \
 		rubygem-typhoeus>=1.3.0:www/rubygem-typhoeus \
-		rubygem-yajl-ruby>=1.3.0:devel/rubygem-yajl-ruby
+		rubygem-yajl-ruby>=1.4.1:devel/rubygem-yajl-ruby
 
 USES=		gem
 
