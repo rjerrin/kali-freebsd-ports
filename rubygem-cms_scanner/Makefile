@@ -1,7 +1,7 @@
 # $FreeBSD$
 
 PORTNAME=	cms_scanner
-PORTVERSION=	0.0.39.3
+PORTVERSION=	0.0.39.4
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
