@@ -1,0 +1,334 @@
+No entry for terminal type "eterm-color";
+using dumb terminal settings.
+root@fbsd:~/kali-freebsd-ports/fports/0d1n-OdinV38 # make clean
+rm -f *.o 0d1n
+root@fbsd:~/kali-freebsd-ports/fports/0d1n-OdinV38 # make
+cc -W -Wall -Wextra -O2 -fstack-protector-all -D_FORTIFY_SOURCE=2 -I /usr/local/inc
+lude -I src/headers -c src/*.c
+cc  -o 0d1n *.o  -Wl,-z,relro,-z,now,-L,/usr/local/lib,-lcurl,-lpthread
+root@fbsd:~/kali-freebsd-ports/fports/0d1n-OdinV38 # ls
+.gitattributes          README.txt              scan.o
+0d1n                    bin                     spider.o
+0d1n.o                  doc                     src
+0d1n_viewer             file_ops.o              string_ops.o
+LICENSE                 get_csrf_token.o        strsec.o
+LICENSE.txt             html_entities.o         tables
+Makefile                mem_ops.o               tamper.o
+Makefile.orig           opt_extract.o           templates
+Makefile~               payloads                thpool.o
+README.md               results.o               validate.o
+root@fbsd:~/kali-freebsd-ports/fports/0d1n-OdinV38 # cd files
+cd: files: No such file or directory
+root@fbsd:~/kali-freebsd-ports/fports/0d1n-OdinV38 # ls
+.gitattributes          README.txt              scan.o
+0d1n                    bin                     spider.o
+0d1n.o                  doc                     src
+0d1n_viewer             file_ops.o              string_ops.o
+LICENSE                 get_csrf_token.o        strsec.o
+LICENSE.txt             html_entities.o         tables
+Makefile                mem_ops.o               tamper.o
+Makefile.orig           opt_extract.o           templates
+Makefile~               payloads                thpool.o
+README.md               results.o               validate.o
+root@fbsd:~/kali-freebsd-ports/fports/0d1n-OdinV38 # pwd  
+/root/kali-freebsd-ports/fports/0d1n-OdinV38
+root@fbsd:~/kali-freebsd-ports/fports/0d1n-OdinV38 # cd ..
+root@fbsd:~/kali-freebsd-ports/fports # ls
+#Makefile#                              Makefile.bak
+#Makefile.2#                            Makefile~
+#Makefile.bak#                          distinfo
+.#Makefile.2                            files
+.#Makefile.bak                          patch-Makefile
+0d1n-OdinV38                            pkg-descr
+CoolerVoid-0d1n-3.8-OdinV38_GH0.tar.gz  pkg-plist
+Makefile                                ptchs
+Makefile.2                              work
+Makefile.2~
+root@fbsd:~/kali-freebsd-ports/fports # cd work/
+root@fbsd:~/kali-freebsd-ports/fports/work # ls
+.configure_done.0d1n._usr_local .license_done.0d1n._usr_local
+.extract_done.0d1n._usr_local   .patch_done.0d1n._usr_local
+.license-catalog.mk             0d1n-OdinV38
+.license-report
+root@fbsd:~/kali-freebsd-ports/fports/work # ls -lrt
+total 16
+drwxr-xr-x  9 root  wheel   15 Jul 10 08:26 0d1n-OdinV38
+-rw-r--r--  1 root  wheel    0 Dec  8 12:36 .extract_done.0d1n._usr_local
+-rw-r--r--  1 root  wheel  221 Dec  8 12:36 .license-catalog.mk
+-rw-r--r--  1 root  wheel   81 Dec  8 12:36 .license-report
+-rw-r--r--  1 root  wheel    0 Dec  8 12:36 .license_done.0d1n._usr_local
+-rw-r--r--  1 root  wheel    0 Dec  8 12:36 .patch_done.0d1n._usr_local
+-rw-r--r--  1 root  wheel    0 Dec  8 12:36 .configure_done.0d1n._usr_local
+root@fbsd:~/kali-freebsd-ports/fports/work # cd 0d1n-OdinV38/
+root@fbsd:~/kali-freebsd-ports/fports/work/0d1n-OdinV38 # ls
+.gitattributes  LICENSE.txt     README.txt      payloads        templates
+0d1n_viewer     Makefile        bin             src
+LICENSE         README.md       doc             tables
+root@fbsd:~/kali-freebsd-ports/fports/work/0d1n-OdinV38 # cd bin
+root@fbsd:~/kali-freebsd-ports/fports/work/0d1n-OdinV38/bin # ls
+0d1n
+root@fbsd:~/kali-freebsd-ports/fports/work/0d1n-OdinV38/bin # ./0d1n 
+ELF binary type "0" not known.
+/bin/sh: ./0d1n: Exec format error
+root@fbsd:~/kali-freebsd-ports/fports/work/0d1n-OdinV38/bin # file 0d1n 
+0d1n: ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), dynamically linked, 
+interpreter /lib64/ld-linux-x86-64.so.2, BuildID[sha1]=7102401335a0cb4e60e011d21ddd
+3049b6d947d4, for GNU/Linux 3.2.0, not stripped
+root@fbsd:~/kali-freebsd-ports/fports/work/0d1n-OdinV38/bin # ./0d1n 
+ELF binary type "0" not known.
+/bin/sh: ./0d1n: Exec format error
+root@fbsd:~/kali-freebsd-ports/fports/work/0d1n-OdinV38/bin # ./0d1n 
+ELF binary type "0" not known.
+/bin/sh: ./0d1n: Exec format error
+root@fbsd:~/kali-freebsd-ports/fports/work/0d1n-OdinV38/bin # pwd
+/root/kali-freebsd-ports/fports/work/0d1n-OdinV38/bin
+root@fbsd:~/kali-freebsd-ports/fports/work/0d1n-OdinV38/bin # ls
+0d1n
+root@fbsd:~/kali-freebsd-ports/fports/work/0d1n-OdinV38/bin # cd ..
+root@fbsd:~/kali-freebsd-ports/fports/work/0d1n-OdinV38 # ls
+.gitattributes  LICENSE.txt     README.txt      payloads        templates
+0d1n_viewer     Makefile        bin             src
+LICENSE         README.md       doc             tables
+root@fbsd:~/kali-freebsd-ports/fports/work/0d1n-OdinV38 # ls bin
+0d1n
+root@fbsd:~/kali-freebsd-ports/fports/work/0d1n-OdinV38 # ls
+.gitattributes  LICENSE.txt     README.txt      payloads        templates
+0d1n_viewer     Makefile        bin             src
+LICENSE         README.md       doc             tables
+root@fbsd:~/kali-freebsd-ports/fports/work/0d1n-OdinV38 # ./0d1n
+/bin/sh: ./0d1n: not found
+root@fbsd:~/kali-freebsd-ports/fports/work/0d1n-OdinV38 # cat 0d1n
+cat: 0d1n: No such file or directory
+root@fbsd:~/kali-freebsd-ports/fports/work/0d1n-OdinV38 # ls
+.gitattributes  LICENSE.txt     README.txt      payloads        templates
+0d1n_viewer     Makefile        bin             src
+LICENSE         README.md       doc             tables
+root@fbsd:~/kali-freebsd-ports/fports/work/0d1n-OdinV38 # cd bin
+root@fbsd:~/kali-freebsd-ports/fports/work/0d1n-OdinV38/bin # ls
+0d1n
+root@fbsd:~/kali-freebsd-ports/fports/work/0d1n-OdinV38/bin # cat 0d1n
+ here, try 500, 1000... ea
+--proxy-rand :   First argv is a file list of proxys, proxy list to use random prox
+y per Requeststrfseek__fprintf_chkctimestdoutstrnlenmemcpyfcloserandmallocstrcat__c
+type_b_lexample: format [protocol://][user:password@]machine[:port]ngusleepfwritefr
+--useragent-rand : Need a list of User agents, use different user agent per request
+--tamper : Payload tamper to try bypass filters7GLIBC_2.15GLIBC_2.4GLIBC_2.3.4GLIBC
+    randcase : to use lower and upper case random position in string          
+    urlencode :  converts characters into a format that can be transmitted over the
+    double_urlencode : converts payload two times with urlencodeFÃ†UÃ
+    apostrophe2nullencode: change apostrophe to illegal double unicode counterpart
+    rand_comment: to use random comment '/**/' position in payload string
+    rand_space: write random ' ' blank spaces
+    replace_keywords: replace especial words, SELECT to SELselectECT etc...
+--token_name : Name of anti-csrf token field to get and use in your request
+
+Enable-options-args:
+--save_response :   Enable save response highlights view when you click at http sta
+tus code in datatables 
+--json_headers :   Enable add JSON headers in Request 
+--keep_alive_test : Enable no-cache header + keep alive with rand number to test De
+nial of Service 
+--max_requests : keep alive test total requests in test 
+--race : Enable a resource to explore race conditions through multithread in sendin
+g requests. So the number of requests simultaneously follow the number of threads(i
+nput of argument --threads).
+
+Example 1 to find SQL-injection:
+0d1n --host 'http://site.com/view/1^/product/^/' --payloads /opt/0d1n/payloads/sqli
+_list.txt --find_string_list /opt/0d1n/payloads/sqli_str2find_list.txt --log log133
+7 --tamper randcase --threads 800 --timeout 3 --save_response
+
+Example 2 to Bruteforce in simple auth:
+0d1n --host 'http://site.com/auth.py' --post 'user=admin&password=^' --payloads /op
+t/0d1n/payloads/wordlist.txt --log log007 --threads 500 --timeout 3 --save_response
+
+Example 3 to search XSS and pass anti-csrf token:
+0d1n --host https://page/test.php --post 'admin=user_name&pass=^' --payloads /opt/0
+d1n/payloads/xss.txt --find_string_list opt/0d1n/payloads/xss.txt --token_name name
+_token_field --log logtest --save_response
+
+Example 4 Brute dir:
+0d1n --host https://page/^ --payloads /opt/0d1n/payloads/dir_brute.txt --threads 80
+0 --timeout 3 --log logtest_brutedir --save_response
+
+Example 5 Keep alive test like slowloris:
+0d1n --host https://page/ --threads 50 --keep_alive_test --max_requests 1000 --prox
+y-rand  /opt/0d1n/payloads/proxy.txt --useragent-rand /opt/0d1n/payloads/useragents
+.txt --log logtest_keepalive --save_response
+
+Notes:
+Look the character '^', is lexical char to change to payload list lines...
+Coded by Cooler_
+ coolerlair[at]gmail[dot]com
+ Error 
+Argument Host is very large 
+Error 
+Argument Payloads is very large  
+Error 
+Argument custom is very large  
+Error 
+Argument Find list file is very large  
+Error 
+Argument Regex file is very large  
+Error 
+Argument cookie jar file is very large  
+Error 
+Argument Useragent fuzz is very large  
+Error 
+Argument cookie is very large  
+Error 
+Argument POST is very large  
+Error 
+Argument method is very large  
+Error 
+Argument header is very large  
+Error 
+Argument Log file is very large 
+Error 
+Argument user agent is very large  
+Error 
+Argument ca cert file name is very large  
+Error 
+Argument threads is very large  
+Error 
+Argument timeout is very large need 3 digit  
+ DBA8N@[0
+8N@g@ÃXRˇˇêFéGçB åD(ÜA0ÉDPj
+0A(A BBAX§TˇˇFFéEçB åH(ÜA0ÉF@Ì
+0H(A BBHaHUPJ@x one digit example 1,2,3,32,39 : 
+HUPTTlòVˇˇπFèEéB çE(åD0ÜA8ÉDPPXI`]XAPT
+8D0A(B BBA ƒWˇˇœEÉL ¥
+A0Ë¨Wˇˇ∂FåAÜA ÉG0ö
+ DAAL8XˇˇfFèBéB çE(åA0ÜI8ÉDp]
+8D0A(B BBILlX\ˇˇdFèBéB çB(åA0ÜA8ÉDê¶
+8A0A(B BBF$ºx_ˇˇ™BåFÉD0M8K@‰`ˇˇ”H ≈
+A ƒ`ˇˇIEÜG nast version
+A($`ˇˇREÜDÉG0n
+AA P$aˇˇIEÜG n 
+A tPaˇˇjEÉD {ment.
+A8òúaˇˇñFçFåA ÜD(ÉJ@d
+(D ABAH‘bˇˇ<FèOéB çB(åA0ÜC8ÉI payl
+8A0A(B BBH, ÙbˇˇEÜG \eed more arguments.
+A %s 
+(K0F0P‘cˇˇ
+EÜG \Request: %s 
+Alist: %s 
+(N0FÑ∞dˇˇIH w
+E†‰dˇˇ#H Á
+A$º¯eˇˇ°FéBçB åA(ÜA0ÉD@Ø
+HNPUHNPN@W : %s 
+HNPbÑ‰Äuˇˇ?FèBéB çB(åA0ÜA8ÉG∏ L∏@LI
+¯I^ÄJA¯IBI[¯IGÄJNàJDêJDòJB†JB®JD∞JXI¯
+IbÄJGàJGêJAòJI†JD®JA∞JVIk¯IbÄJGàJGêJAòJI†JD
+®JA∞JVIP¯IPÄJRàJHêJIòJA†JB®JA∞JH∏JD¿JA»JC
+–JPIM¯IZÄJRàJBêJBòJA†JB®JA∞JH∏JD¿JA»JC–JII
+Q¯IbÄJGàJGêJDòJA†JNI^¯IWÄJBàJAêJBòJA†JH®JD∞
+8A0A(B BBFÅ¯IMÄJKàJAêJDòJB†JA®JD∞JA∏JA¿JPIT¯I
+NÄJPàJBêJBòJB†JA®JD∞JA∏JA¿JPI\¯IGÄJ[àJFêJD
+òJD†JPI◊¯IDÄJAàJIêJDòJA†JIIy¯IDÄJAàJIê
+JDòJA†JII¯¯IUÄJ@¯IAIG¯IPÄJNàJBêJAòJD†JA®
+JA∞JPII¯IPÄJTàJLêJDòJA†JIIHl       8ˇˇ∫Fè
+8D0A(B BBBH∏A8É¨ˇˇøFèGéE çB(åD0ÜC8É
+ ÄˇˇuFèBéB çB(åA0ÜF8ÉD`ôhGpL`FhDpL    
+XÉˇˇäFåAÜI0<l
+»ÑˇˇˇFåKÜA ÉDpxrÄVxApT
+ DAAå¨
+àÖˇˇFèFéB çB(åA0ÜA8ÉG†>®I∞A∏D
+8A0A(B BBF‚®N∞@®A†é®M∞ì∏M¿c†<
+DA Ñ∞ëˇˇvEÉD0d                                  
+A8®íˇˇóFçBåA ÜA(ÉM@q
+(D ABA@‰píˇˇÃFéBçB åD(ÜC0ÉD@ñ
+0D(A BBJ@(¸íˇˇÃFéBçB åD(ÜC0ÉD@õ
+0D(A BBElàìˇˇ\H N
+AàÃìˇˇZH @
+HH§îˇˇÔFèBéB çE(åA0ÜD8ÉJ`æ
+8D0A(B BBA`¥îˇˇ∏FèGéB çE(åD0ÜA8ÉD†
+tóˇˇñEÜL@gA0ÜA8ÉDpW               
+óˇˇôH s
+tòˇˇ≤FåD ä
+AHôˇˇ∫FèBéB çB(åD0ÜA8ÉDPR
+8D0A(B BBD(PÑôˇˇeEÜHÉG0F
+DA0|»ôˇˇFåAÜD ÉV0
+ AAE0∞§õˇˇ‡FåAÜA ÉG0µ
+ DAE0‰Púˇˇ
+FåAÜD ÉD@¶
+ DAD8,ùˇˇJFçBåA ÜD(ÉDP
+(D ABCT@ûˇˇDH r
+EptûˇˇDH r
+Eå®ûˇˇDH r
+EH®‹ûˇˇFèBéB çB(åA0ÜA8ÉGPÔ
+8D0A(B BBAHÙ∞üˇˇ◊FèBéB çB(åA0ÜD8ÉDp
+                                                                               
+8D0A(B BBKL@D°ˇˇFèEéB çI(åH0ÜA8ÉLê≈
+8D0A(B BBA@ê£ˇˇïFåDÜK ÉF0≤
+ AAG[
+8K@J0‘`•ˇˇ™BçBåA ÜG0X
+ DBD‹•ˇˇ^H P
+AD$ ¶ˇˇ/FéPçN åA(ÜA0ÉJÄ∑
+0C(A BBGl®ˇˇ=AU (à,®ˇˇäAÜAÉG0y
+AA@¥ê®ˇˇ;FéBçB åA(ÜF0ÉF@f
+0D(A BBA8¯å™ˇˇFçEåD ÜI(ÉD@¢
+(A ABD04`´ˇˇyFåAÜE ÉN0N
+ DAE4h¨´ˇˇuFåAÜD@<
+DKT
+AA(†Ù¨ˇˇmEÜAÉD0[
+AAÃ8≠ˇˇ<H n
+AË\≠ˇˇ5H g
+A,Ä≠ˇˇ◊EÉF M(K0X(A T
+A40ÆˇˇPH0B
+ATPdÆˇˇFåAÜG–´
+AAuÿB‡e–z
+ÿB‡Eu
+ÿB‡EuÿB‡<®,∞ˇˇ∞FçBåD ÜD0„8K@d8
+A0l                                                                               
+ ABDËú±ˇˇSH s
+ED‡±ˇˇeFèIéE çE(åD0ÜH8ÉG@n8A0A(B BBL≤ˇˇ__frame_dummy_init_ar
+ray_entryfile_ops.c__FUNCTION__.7570__FUNCTION__.7590__FUNCTION__.7602line.7611__FU
+NCTION__.7617get_csrf_token.chtml_entities.cmem_ops.cxmalloc_fatal__FUNCTION__.7557
+__PRETTY_FUNCTION__.7575__FUNCTION__.7613__FUNCTION__.7623opt_extract.clong_options
+.7560__FUNCTION__.7564results.cscan.c__FUNCTION__.7584spider.c__FUNCTION__.7650stri
+ng_ops.ctext.7582text.7592__FUNCTION__.7635strsec.ctamper.cthpool.cjobqueue_pullthr
+ead_holdthreads_on_holdthread_dothreads_keepalivebsem_init.part.0jobqueue_clearvali
+date.c__FUNCTION__.7554__FUNCTION__.7566__FUNCTION__.7597__FRAME_END____init_array_
+end__init_array_start_GLOBAL_OFFSET_TABLE__DYNAMIC__GNU_EH_FRAME_HDRrand_commentstr
+dup@@GLIBC_2.2.5mainclock@@GLIBC_2.2.5feof@@GLIBC_2.2.5html_entitiesselect@@GLIBC_2
+.2.5memcpy@@GLIBC_2.14total_lines_of_bufferrealloc@@GLIBC_2.2.5curl_easy_send@@CURL
+_OPENSSL_4__TMC_END___ITM_deregisterTMCloneTablecurl_easy_cleanup@@CURL_OPENSSL_4__
+ctype_b_loc@@GLIBC_2.3thpool_num_threads_workingstrncpy@@GLIBC_2.2.5__libc_csu_fini
+__assert_fail@@GLIBC_2.2.5insert_csrf_token__cxa_finalize@@GLIBC_2.2.5deadspacecurl
+_global_init@@CURL_OPENSSL_4apostrophe2nullencodestrncmp@@GLIBC_2.2.5pthread_mutex_
+unlock@@GLIBC_2.2.5__fprintf_chk@@GLIBC_2.3.4xmallocarray__data_startftell@@GLIBC_2
+.2.5parse_n_scanmkdir@@GLIBC_2.2.5__bss_startpthread_mutex_lock@@GLIBC_2.2.5strtok@
+@GLIBC_2.2.5__stack_chk_fail@@GLIBC_2.4memset@@GLIBC_2.2.5difftime@@GLIBC_2.2.5regc
+omp@@GLIBC_2.2.5load_signal_alarmcurl_easy_recv@@CURL_OPENSSL_4pthread_mutex_init@@
+GLIBC_2.2.5getc@@GLIBC_2.2.5load_files__gmon_start__strlen@@GLIBC_2.2.5strcpy@@GLIB
+C_2.2.5free_global_bufpthread_cond_init@@GLIBC_2.3.2parse_tokenfclose@@GLIBC_2.2.5o
+ptarg@@GLIBC_2.2.5curl_easy_strerror@@CURL_OPENSSL_4thpool_initregfree@@GLIBC_2.2.5
+double_urlencodeget_anti_csrf_tokenblobstrstr@@GLIBC_2.2.5thpool_resumewrite_filege
+ttimeofday@@GLIBC_2.2.5fflush@@GLIBC_2.2.5chompWriteMemoryCallback__fdelt_chk@@GLIB
+C_2.15pthread_cond_wait@@GLIBC_2.3.2strchr@@GLIBC_2.2.5fread@@GLIBC_2.2.5strlcpytes
+t_letterstdout@@GLIBC_2.2.5pthread_kill@@GLIBC_2.2.5scan_gcc_old_edatastderr@@GLIBC
+_2.2.5strnlen@@GLIBC_2.2.5fgets@@GLIBC_2.2.5replacerand_numberparamstrstr_regexentr
+opy_clockcurl_slist_append@@CURL_OPENSSL_4exit@@GLIBC_2.2.5curl_easy_perform@@CURL_
+OPENSSL_4init_banner_odinparser_optsstrcat@@GLIBC_2.2.5replace_keywordspthread_crea
+te@@GLIBC_2.2.5__isoc99_scanf@@GLIBC_2.7pthread_cond_signal@@GLIBC_2.3.2end_datatab
+leunmagicquotesetrlimit@@GLIBC_2.2.5thpool_wait__libc_csu_initthpool_pausexstrndupk
+eep_alive_generatestrerror@@GLIBC_2.2.5xreallocsigemptyset@@GLIBC_2.2.5sigaction@@G
+LIBC_2.2.5xmallocprepare_datatablescan_gcc_newstrcmp@@GLIBC_2.2.5encode64char_type_
+countercalloc@@GLIBC_2.2.5opterr@@GLIBC_2.2.5pthread_detach@@GLIBC_2.2.5strtol@@GLI
+BC_2.2.5spiderxfreecurl_easy_setopt@@CURL_OPENSSL_4pthread_cond_broadcast@@GLIBC_2.
+3.2rand_spaceprctl@@GLIBC_2.2.5parse_http_statusmalloc@@GLIBC_2.2.5curl_slist_free_
+all@@CURL_OPENSSL_4xcalloccurl_global_cleanup@@CURL_OPENSSL_4prepare_urlkeep_alive_
+test_scanxreallocarray__libc_start_main@@GLIBC_2.2.5payload_injectorRandom_linefile
+validate_hostnamecurl_easy_getinfo@@CURL_OPENSSL_4getopt_long@@GLIBC_2.2.5rand@@GLI
+BC_2.2.5curl_easy_init@@CURL_OPENSSL_4file_size__errno_location@@GLIBC_2.2.5_ITM_re
+gisterTMCloneTable__dso_handleputs@@GLIBC_2.2.5optopt@@GLIBC_2.2.5ctime@@GLIBC_2.2.
+5__printf_chk@@GLIBC_2.3.4regexec@@GLIBC_2.3.4strlcatusleep@@GLIBC_2.2.5no_write_co
+redumpfwrite@@GLIBC_2.2.5srandom@@GLIBC_2.2.5wait_on_socketrandom_line_of_bufferspa
+ces2commenttamper_choicegetpid@@GLIBC_2.2.5rand_casegetline@@GLIBC_2.2.5thpool_add_
+workthpool_destroy_IO_stdin_usedstdin@@GLIBC_2.2.5No_Pause_Scanread_linesfseek@@GLI
+BC_2.2.5rand_strfopen@@GLIBC_2.2.5__snprintf_chk@@GLIBC_2.3.4strnstrwrite_result.sy
+root@fbsd:~/kali-freebsd-ports/fports/work/0d1n-OdinV38/bin # d.note.ABI-tag.gnu.ha
+root@fbsd:~/kali-freebsd-ports/fports/work/0d1n-OdinV38/bin # nit.plt.got.plt.sec.t
+root@fbsd:~/kali-freebsd-ports/fports/work/0d1n-OdinV38/bin # namic.data.bss.commen
+root@fbsd:~/kali-freebsd-ports/fports/work/0d1n-OdinV38/bin # reseti‡‡

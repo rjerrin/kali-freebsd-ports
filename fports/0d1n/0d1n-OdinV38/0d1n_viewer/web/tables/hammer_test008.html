@@ -1,0 +1,79 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"><html>
+  <head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<link rel="shortcut icon" type="image/ico" href="img/hammer.ico" />
+		
+		<title>0d1n's Output table</title>
+              
+		<style type="text/css" title="currentStyle">
+			@import "media/css/demo_page.css";
+			@import "media/css/demo_table.css";
+                       @import "media/theme/ui-darkness/jquery-ui-1.8.23.custom.css";
+		</style>
+		<script type="text/javascript" language="javascript" src="media/js/jquery.js"></script>
+		<script type="text/javascript" language="javascript" src="media/js/jquery.dataTables.js"></script>
+		<script type="text/javascript" src="source/jquery.fancybox.js?v=2.1.5"></script>
+		<link rel="stylesheet" type="text/css" href="source/jquery.fancybox.css?v=2.1.5" media="screen" />
+		<script type="text/javascript" charset="utf-8">
+			$(document).ready(function() {
+				$('.fancybox').fancybox();
+				var oTable = $('#example').dataTable( {
+                                         "bJQueryUI": true,
+					"bProcessing": true,
+
+"sAjaxSource": "test008.txt" 
+                        			     			} );
+			} );
+		</script>
+	</head>
+	<body id="dt_example">
+		<div id="container" align="center">
+		 <img src="img/odin.png" width="150" height="150" >
+			
+			<h1>0d1n's Output table</h1>
+			<div id="dynamic">
+<table cellpadding="0" cellspacing="1" border="0" class="display" id="example" width="100%" >
+	<thead>
+		<tr>
+			<th width="3%">Status</th>
+			<th width="5%">Length</th>
+			<th width="90%">Params</th>
+			<th width="20%">Grep</th>
+			<th width="40%">Payload</th>
+		</tr>
+	</thead>
+	<tbody>
+		
+	</tbody>
+	<tfoot>
+		<tr>
+		        <th>Status</th>
+			<th>Length</th>
+			<th>Params</th>
+			<th>Grep</th>
+			<th>Payload</th>
+		</tr>
+	</tfoot>
+</table>
+			</div>
+			<div class="spacer"></div>
+			
+			
+			
+			
+			
+			
+			<div id="footer" class="clear" style="text-align:center;">
+				<p>
+					 <a href="http://code.google.com/p/0d1n/">Odin Tool</a> 
+				</p>
+				
+				<span style="font-size:10px;">
+					
+					0d1n is  licensed under theGPL v3 license. </a>.
+				</span>
+			</div>
+		</div>
+	</body>
+</html>
+

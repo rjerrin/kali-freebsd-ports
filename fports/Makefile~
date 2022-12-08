@@ -6,9 +6,6 @@ MAINTAINER=	zackj901@yandex.com
 COMMENT=	Open source web HTTP fuzzing tool and bruteforcer
 WWW=		https://github.com/CoolerVoid/0d1n
 
-USES=		gmake
-GNU_CONFIGURE=	yes
-
 LICENSE=	GPLv3
 
 LIB_DEPENDS=	libcurl.so:ftp/curl
@@ -22,8 +19,15 @@ PORTDOCS=	README.txt
 
 OPTIONS_DEFINE=	DOCS
 
+
+pre-build:
+	@${REINPLACE_CMD}  -e '/^#include <alloca\.h>/d' ${WRKSRC}/src/headers/spider.h \
+		  ${WRKSRC}/src/headers/results.h
+
+
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/${PORTNAME} ${STAGEDIR}${PREFIX}/bin
+
 
 do-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
