@@ -1,0 +1,29 @@
+SQL
+sql
+xss
+XSS
+error
+exception
+invalid
+fail
+stack
+access
+segmentation
+file
+not found
+unknown
+uid=
+c:\\
+varchar
+ODBC
+quotation mark
+syntax
+ORA-
+\<\?php
+bin/ruby
+bin/perl
+bin/python
+\?\>
+eval\(
+system\(
+execl\(
