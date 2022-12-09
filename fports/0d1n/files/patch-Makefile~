@@ -7,7 +7,7 @@
 +CC?=gcc
 +CFLAGS+=-W -Wall -Wextra  -fstack-protector-all
 +DFLAGS=-D_FORTIFY_SOURCE=2 -I /usr/local/include -I src/headers
-+LDFLAGS=-Wl,-z,relro,-z,now,-L,/usr/local/lib,-lcurl,-lpthread
++LDFLAGS=-Wl,-z,relro,-z,now,-L,/usr/local/lib,-lcurl
  DIR=src/
  DIROUT=bin/
  DIR_HEADERS=src/headers/

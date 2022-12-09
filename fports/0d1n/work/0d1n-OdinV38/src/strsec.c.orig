@@ -17,9 +17,6 @@
  */
 
 
-#include <string.h>
-#include <stdlib.h>
-
 #if !defined(__FreeBSD__) && !defined(__OpenBSD__) && !defined(__NetBSD__) && \
     !defined(__bsdi__) && !defined(__APPLE__)
 
@@ -158,7 +155,7 @@ strnstr(const char *s, const char *find, size_t slen)
 
 char *xstrndup (const char *s, size_t n)
 {
-	char* new = malloc(n+1);
+	char* new = xmalloc(n+1);
 
 	if (new) 
 	{

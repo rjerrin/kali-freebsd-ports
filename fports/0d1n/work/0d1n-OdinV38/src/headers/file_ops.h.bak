@@ -12,6 +12,7 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include <errno.h>
+#include <alloca.h>
 #include "opt_extract.h"
 
 void end_datatable(char * path);

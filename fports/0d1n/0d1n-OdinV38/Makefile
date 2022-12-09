@@ -13,23 +13,4 @@ DIR_HEADERS=src/headers/
 clean:
 	rm -f *.o 0d1n
 
-PREFIX=/usr/local
-install:
-	make
-	mkdir -p $(DESTDIR)$(PREFIX)/bin
-	install -m 0755 bin/0d1n $(DESTDIR)$(PREFIX)/bin
-	mkdir /opt/0d1n
-	mkdir /opt/0d1n/view/
-	mkdir /opt/0d1n/view/response_sources
-	mkdir /opt/0d1n/payloads
-	cp -rf templates /opt/0d1n/
-	cp -rf tables /opt/0d1n/view/
-	cp -rf payloads /opt/0d1n/
-	chmod 0755 -R /opt/0d1n
-	chown ${USER} -R /opt/0d1n
-	chown ${USER} $(DESTDIR)$(PREFIX)/bin/0d1n
 
-uninstall:
-	rm $(DESTDIR)$(PREFIX)/bin/0d1n
-	rm -rf /opt/0d1n
-	rm -f *.o 0d1n
