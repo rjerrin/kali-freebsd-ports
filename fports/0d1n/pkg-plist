@@ -1,1 +1,8 @@
-%%DOCSDIR%%/README.txt
+%%DATADIR%%/templates/hammer1.conf
+%%DATADIR%%/templates/hammer2.conf
+%%DATADIR%%/templates/template.conf
+%%DATADIR%%/include/Ntp.pm
+%%DATADIR%%/include/SNMP.pm
+%%DATADIR%%/include/TFTP.pm
+%%DATADIR%%/include/HTTP-bugs.pm
+%%DATADIR%%/include/log.pm

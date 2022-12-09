@@ -23,9 +23,18 @@ post-patch:
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/${PORTNAME} ${STAGEDIR}${PREFIX}/bin
+        ${MKDIR} 	    ${STAGEDIR}${DATADIR}/view
+	${MKDIR} 	    ${STAGEDIR}${DATADIR}/view/response_sources
+	${MKDIR} 	    ${STAGEDIR}${DATADIR}/payloads
+        (cd ${WRKSRC} && ${COPYTREE_SHARE} templates  ${STAGEDIR}${DATADIR})
+        (cd ${WRKSRC} && ${COPYTREE_SHARE} tables     ${STAGEDIR}${DATADIR})/view
+        (cd ${WRKSRC} && ${COPYTREE_SHARE} payloads   ${STAGEDIR}${DATADIR})
+
+
 
 do-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
 	${INSTALL_DATA} ${WRKSRC}/README.txt ${STAGEDIR}${DOCSDIR}
+
 
 .include <bsd.port.mk>

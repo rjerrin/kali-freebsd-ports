@@ -1,0 +1,17 @@
+name: "0d1n"
+version: "3.8"
+origin: security/0d1n
+comment: <<EOD
+Open source web HTTP fuzzing tool and bruteforcer
+EOD
+maintainer: zackj901@yandex.com
+prefix: /usr/local
+categories: [ security, ]
+licenselogic: single
+www: "https://github.com/CoolerVoid/0d1n"
+licenses: [ GPLv3, ]
+deps: { 
+"curl": {origin: "ftp/curl", version: "7.85.0"}
+}
+options: {
+}

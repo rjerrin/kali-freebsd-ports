@@ -21,8 +21,12 @@ post-patch:
 	@${REINPLACE_CMD}  -e  '/^#include <alloca\.h>/d'  \
                 ${WRKSRC}/src/headers/spider.h ${WRKSRC}/src/headers/results.h ${WRKSRC}/src/headers/file_ops.h
 
+do-install:
+	${INSTALL_PROGRAM} ${WRKSRC}/${PORTNAME} ${STAGEDIR}${PREFIX}/bin
+
 do-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
 	${INSTALL_DATA} ${WRKSRC}/README.txt ${STAGEDIR}${DOCSDIR}
+
 
 .include <bsd.port.mk>
