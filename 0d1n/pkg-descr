@@ -1,7 +1,7 @@
-Web security tool to make fuzzing at HTTP
-inputs.Features include Brute force 
-passwords in auth forms, Directory
-disclosure (use PATH list ),
-Test list on input to find SQL Injection
-and XSS vulnerabilities
-WWW:https://github.com/CoolerVoid/0d1n
+0d1n is a tool for automating customized attacks against web applications.
+Some of its features:
+  - Brute force login names and passwords in authentication forms
+  - Directory disclosure (brute over PATH list and find HTTP status codes)
+  - Tests to find SQL injection and XSS vulnerabilities
+  - Options to load ANTI-CSRF token for each request
+  - Options to use random proxy per request
