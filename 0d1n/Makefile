@@ -29,7 +29,6 @@ do-install:
 	${MKDIR} 	    ${STAGEDIR}${DATADIR}/view/response_sources
 	${MKDIR} 	    ${STAGEDIR}${DATADIR}/payloads
 	(cd ${WRKSRC} && ${COPYTREE_SHARE} templates  ${STAGEDIR}${DATADIR})
-	(cd ${WRKSRC} && ${COPYTREE_SHARE} tables     ${STAGEDIR}${DATADIR}/view)
 	(cd ${WRKSRC} && ${COPYTREE_SHARE} payloads   ${STAGEDIR}${DATADIR})
 
 do-install-DOCS-on:
