@@ -16,7 +16,7 @@ GH_ACCOUNT=	jaeles-project
 GO_MODULE=	github.com/jaeles-project/gospider
 
 PLIST_FILES=	bin/gospider
-PORTDOCS=	README.md
+PORTDOCS=	README.txt
 GO_TARGET=	gospider
 
 OPTIONS_DEFINE=	DOCS
