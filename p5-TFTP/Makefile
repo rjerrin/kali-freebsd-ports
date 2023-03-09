@@ -1,5 +1,3 @@
-# $FreeBSD$
-
 PORTNAME=	TFTP
 PORTVERSION=	1.0
 DISTVERSIONSUFFIX=	b3
@@ -8,8 +6,11 @@ MASTER_SITES=	CPAN
 MASTER_SITE_SUBDIR=	CPAN:SAPER
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	zackj901@yandex.com
+MAINTAINER=	rihaz.jerrin@gmail.com
 COMMENT=	TFTP client in Perl as described in RFC783
+WWW=		https://metacpan.org/release/TFTP
+
+LICENSE=	ARTPERL10
 
 USES=		perl5
 USE_PERL5=	configure
