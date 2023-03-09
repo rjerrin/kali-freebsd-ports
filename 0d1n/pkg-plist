@@ -1,6 +1,4 @@
-%%DATADIR%%/templates/hammer1.conf
-%%DATADIR%%/templates/hammer2.conf
-%%DATADIR%%/templates/template.conf
+bin/0d1n
 %%DATADIR%%/payloads/crlfinjection.txt
 %%DATADIR%%/payloads/dir_brute.txt
 %%DATADIR%%/payloads/find_responses.txt
@@ -23,4 +21,8 @@
 %%DATADIR%%/payloads/xss.txt
 %%DATADIR%%/payloads/xss_robertux.txt
 %%DATADIR%%/payloads/xxe_fuzz.txt
+%%DATADIR%%/templates/hammer1.conf
+%%DATADIR%%/templates/hammer2.conf
+%%DATADIR%%/templates/template.conf
+%%PORTDOCS%%%%DOCSDIR%%/README.txt
 @dir %%DATADIR%%/view/response_sources
