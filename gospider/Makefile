@@ -3,7 +3,7 @@ PORTVERSION=	1.1.6
 DISTVERSIONPREFIX=	v
 CATEGORIES=	www
 
-MAINTAINER=	zackj901@yandex.com
+MAINTAINER=	rihaz.jerrin@gmail.com
 COMMENT=	Web spider written in Go
 WWW=	https://github.com/jaeles-project/gospider
 
