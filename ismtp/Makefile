@@ -1,16 +1,15 @@
 PORTNAME=	ismtp
 DISTVERSION=	g20190921
 CATEGORIES=	security
-MASTER_SITES=	GH
 
 MAINTAINER=	rihaz.jerrin@gmail.com
 COMMENT=	Test for SMTP user enumeration,internal spoofing, and relay
-WWW=	https://github.com/altjx/ipwn/tree/master/iSMTP
+WWW=		https://github.com/altjx/ipwn/tree/master/iSMTP
 
 LICENSE=	MIT
 LICENSE_FILE=	${WRKSRC}/iSMTP/LICENSE.md
 
-USES=	python:3.0+  shebangfix
+USES=		python:3.0+ shebangfix
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	altjx
