@@ -1,6 +1,6 @@
 PORTNAME=	dnsrecon
-DISTVERSION=	0.10.1
-PORTREVISION=	1
+DISTVERSION=	1.1.3
+#PORTREVISION=	1
 CATEGORIES=	dns
 
 MAINTAINER=	rihaz.jerrin@gmail.com
@@ -26,16 +26,15 @@ NO_BUILD=	yes
 FILELIST=	namelist.txt subdomains-top1mil-20000.txt \
 		subdomains-top1mil-5000.txt subdomains-top1mil.txt
 
-post-patch:
-	@${REINPLACE_CMD} -e 's|from lib|from dnsrecon|g' ${WRKSRC}/${PORTNAME}.py \
-							${WRKSRC}/lib/crtenum.py \
+#post-patch:
+#	@${REINPLACE_CMD} -e 's|from lib|from dnsrecon|g' ${WRKSRC}/${PORTNAME}.py \
 							${WRKSRC}/lib/yandexenum.py
 
 do-install:
 	${MKDIR} ${STAGEDIR}${DOCSDIR}
 	${MKDIR} ${STAGEDIR}${DATADIR}
 	${MKDIR} ${STAGEDIR}${PYTHONPREFIX_SITELIBDIR}/dnsrecon
-	(cd ${WRKSRC}/lib && ${COPYTREE_SHARE} \* \
+	(cd ${WRKSRC}/dnsrecon && ${COPYTREE_SHARE} \* \
 		${STAGEDIR}${PYTHONPREFIX_SITELIBDIR}/dnsrecon)
 	${INSTALL_SCRIPT} ${WRKSRC}/dnsrecon.py ${STAGEDIR}${PREFIX}/bin/dnsrecon
 	${INSTALL_DATA}	${WRKSRC}/README.md ${STAGEDIR}${DOCSDIR}/README
