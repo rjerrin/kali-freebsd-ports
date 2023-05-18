@@ -1,5 +1,5 @@
 PORTNAME=	dnsrecon
-DISTVERSION=	1.1.3
+DISTVERSION=	1.1.4
 #PORTREVISION=	1
 CATEGORIES=	dns
 
@@ -9,9 +9,11 @@ WWW=		https://github.com/darkoperator/dnsrecon
 
 LICENSE=	GPLv2
 
-RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}dnspython>=0:dns/py-dnspython@${PY_FLAVOR} \
+RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}dnspython>=2:dns/py-dnspython@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}flake8>=0:devel/py-flake8@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}lxml>=0:devel/py-lxml@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}netaddr>=0:net/py-netaddr@${PY_FLAVOR} \
+		${PYTHON_PKGNAMEPREFIX}pytest>=0:devel/py-pytest@${PY_FLAVOR} \
 		${PYTHON_PKGNAMEPREFIX}sqlite3>=0:databases/py-sqlite3@${PY_FLAVOR}
 
 USES=		python shebangfix
@@ -22,13 +24,6 @@ SHEBANG_FILES=	${WRKSRC}/dnsrecon.py
 
 NO_ARCH=	yes
 NO_BUILD=	yes
-
-FILELIST=	namelist.txt subdomains-top1mil-20000.txt \
-		subdomains-top1mil-5000.txt subdomains-top1mil.txt
-
-#post-patch:
-#	@${REINPLACE_CMD} -e 's|from lib|from dnsrecon|g' ${WRKSRC}/${PORTNAME}.py \
-							${WRKSRC}/lib/yandexenum.py
 
 do-install:
 	${MKDIR} ${STAGEDIR}${DOCSDIR}
